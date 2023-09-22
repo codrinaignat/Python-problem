@@ -8,4 +8,3 @@
 6. Using the obtained dictionary, print the Parameter_name where the key „lib:fusi “ is 1
 7. Using the obtained dictionary, for the parameters of type Uint16, replace the „dd:MaxRange“ value which is different than the maximum value allowed by the data type (65 535)
 8. Write the dictionary in a Output.txt file
-![grafik](https://github.com/codrinaignat/Python-problem/assets/94629883/b90560df-ff6c-430b-b65c-15a6b84ff5b8)
