@@ -1,6 +1,7 @@
+import re
+
 # 1. Open and read the information from Database.txt
 
-import re
 input = open('Database.txt', 'r')
 fileContent = input.read()
 
