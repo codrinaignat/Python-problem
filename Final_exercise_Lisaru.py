@@ -6,40 +6,38 @@ fileContent = input.read()
 
 # 2. Ex2 starts from here
 
-myBigList = fileContent.split("<")
-#len(myBigList) returns 71
+lines = fileContent.split('\n')
 
-x = range(71)
 DAEList = []
 ADAList = []
 RPAList = []
 LVList = []
 ASQList = []
 
-for n in x:
-    if 'PpDae' in myBigList[n]:
-        DAEList.append(myBigList[n])
-    elif 'Ada' in myBigList[n]:
-        ADAList.append(myBigList[n])
-    elif 'PpRpa' in myBigList[n]:
-        RPAList.append(myBigList[n])
-    elif 'PpLv' in myBigList[n]:
-        LVList.append(myBigList[n])
-    elif 'Asq' in myBigList[n]:
-        ASQList.append(myBigList[n])
+for line in lines:
+    if 'PpDae' in line:
+        DAEList.append(line)
+    elif 'Ada' in line:
+        ADAList.append(line)
+    elif 'PpRpa' in line:
+        RPAList.append(line)
+    elif 'PpLv' in line:
+        LVList.append(line)
+    elif 'Asq' in line:
+        ASQList.append(line)
     else:
         print(' ')
-print(*DAEList, sep='\n')
-#print(*ADAList, sep='\n')
-#print(*RPAList, sep='\n')
-#print(*LVList, sep='\n')
-#print(*ASQList, sep='\n')
+# print(*DAEList, sep='\n')
+# print(*ADAList, sep='\n')
+# print(*RPAList, sep='\n')
+# print(*LVList, sep='\n')
+# print(*ASQList, sep='\n')
 
-#Ex3 starts from here
+# Ex3 starts from here
 
-lines = fileContent.split('\n')
-def parameterStringsToDictionaries (stringLines):
-    
+
+def parameterStringsToDictionaries(stringLines):
+
     keys = []
     values = []
     listOfDictionaries = []
@@ -58,15 +56,15 @@ def parameterStringsToDictionaries (stringLines):
         singleDictionary = dict(zip(keys, values))
         listOfDictionaries.append(singleDictionary)
 
-    print(*listOfDictionaries, sep='\n')
-    #print(listOfDictionaries)
+    # print(*listOfDictionaries, sep='\n')
+    # print(listOfDictionaries)
     return
+
 
 parameterStringsToDictionaries(lines)
 
 # 4. With the defined function create a single dictionary having the keys the names of the
 # basic functions and the value the list of dictionaries (previously obtained) (e.g. {RPA:[{}, {}], DAE:[{}, {}]})
-
 
 
 # 5. Using the obtained dictionary, print the Parameter_name value where the key „value“ has array (the type is defined as: type=„type[]“)
