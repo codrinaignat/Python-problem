@@ -26,11 +26,12 @@ for line in lines:
         LVList.append(line)
     elif 'Asq' in line:
         ASQList.append(line)
-# print(*DAEList, sep='\n')
-# print(*ADAList, sep='\n')
-# print(*RPAList, sep='\n')
-# print(*LVList, sep='\n')
-# print(*ASQList, sep='\n')
+
+print(*DAEList, sep='\n')
+print(*ADAList, sep='\n')
+print(*RPAList, sep='\n')
+print(*LVList, sep='\n')
+print(*ASQList, sep='\n')
 
 # Ex3 Define a function to create a list of dictionaries where the key and value pairs are obtain from the equality (there should be 6 pairs) (e.g. [{key1:value1, key2:value3}, {key1:value2, key2:value4}])
 
