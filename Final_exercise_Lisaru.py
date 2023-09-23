@@ -5,6 +5,7 @@ import re
 input = open('Database.txt', 'r')
 fileContent = input.read()
 
+
 # 2. Create 5 lists for each basic function (the prefix of the Parameter_name value indicates the basic function PpDae – DAE (DriverActivityEstimation), Ada – ADA (ActionDecisionAsil), PpRpa – RPA (ReferencePointAdjustment), PpLv – LV (LaneVerification), Asq – ASQ (ActionSuppressionQM)), where the list elements are the lines from the text file (e.g [„string line1“, „string lineX“])
 
 lines = fileContent.split('\n')
@@ -33,8 +34,8 @@ print(*RPAList, sep='\n')
 print(*LVList, sep='\n')
 print(*ASQList, sep='\n')
 
-# Ex3 Define a function to create a list of dictionaries where the key and value pairs are obtain from the equality (there should be 6 pairs) (e.g. [{key1:value1, key2:value3}, {key1:value2, key2:value4}])
 
+# Ex3 Define a function to create a list of dictionaries where the key and value pairs are obtain from the equality (there should be 6 pairs) (e.g. [{key1:value1, key2:value3}, {key1:value2, key2:value4}])
 
 def parameterStringsToDictionaries(stringLines):
 
@@ -59,11 +60,8 @@ def parameterStringsToDictionaries(stringLines):
     return listOfDictionaries
 
 
-# print(parameterStringsToDictionaries(DAEList))
-
 # 4. With the defined function create a single dictionary having the keys the names of the
 # basic functions and the value the list of dictionaries (previously obtained) (e.g. {RPA:[{}, {}], DAE:[{}, {}]})
-
 
 basicFunctionNames = ['PpDae', 'Ada', 'PpRpa', 'PpLv', 'Asq']
 basicFunctionLists = [DAEList, ADAList, RPAList, LVList, ASQList]
@@ -75,24 +73,17 @@ for basicFunctionList in basicFunctionLists:
 
 basicFunctions = dict(zip(basicFunctionNames, basicFunctionDictionaries))
 
-# print(basicFunctions, sep="\n")
-
 
 # 5. Using the obtained dictionary, print the Parameter_name value where the key „value“ has array (the type is defined as: type=„type[]“)
 
 PpDaeParameters = basicFunctions["PpDae"]
-# print(PpDaeParameters[1]["type"])
 AdaParameters = basicFunctions["Ada"]
 PpRpaParameters = basicFunctions["PpRpa"]
 PpLvParameters = basicFunctions["PpLv"]
 AsqParameters = basicFunctions["Asq"]
 
-
 def hasArrayType(parameter):
     return "[]" in parameter["type"]
-
-# print(hasArrayType(PpDaeParameters[1]))
-
 
 def filterArrayTypeParameters(parameters):
     arrayParameters = []
@@ -119,7 +110,6 @@ def filterFusiParameters(parameters):
         if isFusi(parameter):
             fusiParameters.append(parameter)
     return fusiParameters
-
 
 print("\n\nAll fusi parameters:\n")
 for parameters in basicFunctions.values():
