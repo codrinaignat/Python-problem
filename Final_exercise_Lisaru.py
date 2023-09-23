@@ -109,6 +109,23 @@ for parameter in arrayTypeParameters:
 
 # 6. Using the obtained dictionary, print the Parameter_name where the key „lib:fusi “ is 1
 
+def isFusi(parameter):
+    return (parameter["lib:fusi"] == "1")
+
+
+def filterFusiParameters(parameters):
+    fusiParameters = []
+    for parameter in parameters:
+        if isFusi(parameter):
+            fusiParameters.append(parameter)
+    return fusiParameters
+
+
+print("\n\nAll fusi parameters:\n")
+for parameters in basicFunctions.values():
+    fusiParameters = filterFusiParameters(parameters)
+    for parameter in fusiParameters:
+        print(parameter["Parameter_name"])
 
 
 # 7. Using the obtained dictionary, for the parameters of type Uint16, replace the „dd:MaxRange“ value which is
