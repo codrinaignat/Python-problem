@@ -94,8 +94,16 @@ def filterArrayTypeParameters(parameters):
             arrayParameters.append(parameter)
     return arrayParameters
 
-
+print("\n\nAll array parameters:\n")
 for parameter in filterArrayTypeParameters(PpDaeParameters):
+    print(parameter["Parameter_name"])
+for parameter in filterArrayTypeParameters(AdaParameters):
+    print(parameter["Parameter_name"])
+for parameter in filterArrayTypeParameters(PpRpaParameters):
+    print(parameter["Parameter_name"])
+for parameter in filterArrayTypeParameters(PpLvParameters):
+    print(parameter["Parameter_name"])
+for parameter in filterArrayTypeParameters(AsqParameters):
     print(parameter["Parameter_name"])
 
 
