@@ -82,8 +82,10 @@ PpRpaParameters = basicFunctions["PpRpa"]
 PpLvParameters = basicFunctions["PpLv"]
 AsqParameters = basicFunctions["Asq"]
 
+
 def hasArrayType(parameter):
     return "[]" in parameter["type"]
+
 
 def filterArrayTypeParameters(parameters):
     arrayParameters = []
@@ -92,9 +94,8 @@ def filterArrayTypeParameters(parameters):
             arrayParameters.append(parameter)
     return arrayParameters
 
-arrayTypeParameters = filterArrayTypeParameters(PpDaeParameters)
 
-for parameter in arrayTypeParameters:
+for parameter in filterArrayTypeParameters(PpDaeParameters):
     print(parameter["Parameter_name"])
 
 
@@ -110,6 +111,7 @@ def filterFusiParameters(parameters):
         if isFusi(parameter):
             fusiParameters.append(parameter)
     return fusiParameters
+
 
 print("\n\nAll fusi parameters:\n")
 for parameters in basicFunctions.values():
