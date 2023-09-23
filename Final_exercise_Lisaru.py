@@ -94,6 +94,7 @@ def filterArrayTypeParameters(parameters):
             arrayParameters.append(parameter)
     return arrayParameters
 
+
 print("\n\nAll array parameters:\n")
 for parameter in filterArrayTypeParameters(PpDaeParameters):
     print(parameter["Parameter_name"])
@@ -128,7 +129,29 @@ for parameters in basicFunctions.values():
         print(parameter["Parameter_name"])
 
 
-# 7. Using the obtained dictionary, for the parameters of type Uint16, replace the „dd:MaxRange“ value which is
+# 7. Using the obtained dictionary, for the parameters of type tUInt16, replace the „dd:MaxRange“ value which is
 # different than the maximum value allowed by the data type (65 535)
 
-# 8. Write the dictionary in a Output.exe file
+
+def isUInt16(parameter):
+    return (parameter["type"] == "tUInt16")
+
+
+def filterUInt16Parameters(parameters):
+    UInt16Parameters = []
+    for parameter in parameters:
+        if isUInt16(parameter):
+            UInt16Parameters.append(parameter)
+    return UInt16Parameters
+
+
+print("\n\nAll tUInt16 parameters with different dd:MaxRange:\n")
+for parameters in basicFunctions.values():
+    UInt16Parameters = filterUInt16Parameters(parameters)
+    for parameter in UInt16Parameters:
+        if parameter["dd:MaxRange"] != "65535":
+            print(parameter)
+            parameter["dd:MaxRange"] = "65535"
+
+
+# 8. Write the dictionary in a Output.txt file
