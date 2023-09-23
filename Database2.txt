@@ -1,3 +1,0 @@
-<Parameter_name="PpDae_d_DriverUncertain" value="0" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0"/>
-<Parameter_name="Ada_t_ReactionTimes" value="300 300 300 300" type="tUInt16[]" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0"/>
-<Parameter_name="PpRpa_ZeroYawRate_Vehicle" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="32767" lib:fusi="0"/>
