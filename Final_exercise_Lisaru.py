@@ -102,7 +102,6 @@ def filterArrayTypeParameters(parameters):
     return arrayParameters
 
 arrayTypeParameters = filterArrayTypeParameters(PpDaeParameters)
-print(arrayTypeParameters)
 
 for parameter in arrayTypeParameters:
     print(parameter["Parameter_name"])
