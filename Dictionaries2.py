@@ -24,4 +24,5 @@ for line in lines:
     singleDictionary = dict(zip(keys, values))
     listOfDictionaries.append(singleDictionary)
 
-print(*listOfDictionaries, sep='\n')
+#print(*listOfDictionaries, sep='\n')
+print(listOfDictionaries)
