@@ -98,7 +98,7 @@ def filterArrayTypeParameters(parameters):
     return arrayParameters
 
 
-print("\n\nAll array parameters:\n")
+print("\n\nAll parameter names for type=„type[]“:\n")
 for parameter in filterArrayTypeParameters(PpDaeParameters):
     print(parameter["Parameter_name"])
 for parameter in filterArrayTypeParameters(AdaParameters):
@@ -125,7 +125,7 @@ def filterFusiParameters(parameters):
     return fusiParameters
 
 
-print("\n\nAll fusi parameters:\n")
+print("\n\nAll parameter names for lib:fusi=1 :\n")
 for parameters in basicFunctions.values():
     fusiParameters = filterFusiParameters(parameters)
     for parameter in fusiParameters:
