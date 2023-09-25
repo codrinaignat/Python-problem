@@ -4,6 +4,7 @@ import re
 
 input = open('Database.txt', 'r')
 fileContent = input.read()
+input.close()
 
 
 # 2. Create 5 lists for each basic function (the prefix of the Parameter_name value indicates the basic function PpDae – DAE (DriverActivityEstimation), Ada – ADA (ActionDecisionAsil), PpRpa – RPA (ReferencePointAdjustment), PpLv – LV (LaneVerification), Asq – ASQ (ActionSuppressionQM)), where the list elements are the lines from the text file (e.g [„string line1“, „string lineX“])
@@ -35,7 +36,7 @@ print(*LVList, sep='\n')
 print(*ASQList, sep='\n')
 
 
-# Ex3 Define a function to create a list of dictionaries where the key and value pairs are obtain from the equality (there should be 6 pairs) (e.g. [{key1:value1, key2:value3}, {key1:value2, key2:value4}])
+# 3. Define a function to create a list of dictionaries where the key and value pairs are obtain from the equality (there should be 6 pairs) (e.g. [{key1:value1, key2:value3}, {key1:value2, key2:value4}])
 
 def parameterStringsToDictionaries(stringLines):
 
@@ -72,6 +73,8 @@ for basicFunctionList in basicFunctionLists:
         parameterStringsToDictionaries(basicFunctionList))
 
 basicFunctions = dict(zip(basicFunctionNames, basicFunctionDictionaries))
+
+#print(basicFunctions)
 
 
 # 5. Using the obtained dictionary, print the Parameter_name value where the key „value“ has array (the type is defined as: type=„type[]“)
@@ -155,3 +158,14 @@ for parameters in basicFunctions.values():
 
 
 # 8. Write the dictionary in a Output.txt file
+
+output = open('Result.txt', 'w')
+for parameters in basicFunctions.values():
+    for parameter in parameters:
+        output.write("<")
+        for key in parameter.keys():
+            output.write(key + '="' + parameter[key] + '" ')
+        output.write("/>\n")
+
+
+output.close()

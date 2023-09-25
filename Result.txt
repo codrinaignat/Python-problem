@@ -1,0 +1,70 @@
+<Parameter_name="PpDae_d_DriverUncertain" value="0" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="PpDae_SlowAcceleratorPedalGradient" value="25 30 40 50 60" type="tFloat32[]" dd:MinRange="0" dd:MaxRange="101.59999999999999" lib:fusi="0" />
+<Parameter_name="PpDae_SteeringWheelAngleDriverActive" value="1.4 0.87 0.61 0.49 0.28" type="tFloat32[]" dd:MinRange="0" dd:MaxRange="13.970000000000001" lib:fusi="0" />
+<Parameter_name="PpDae_SteeringWheelVelocityDriverActive" value="0.87" type="tFloat32" dd:MinRange="0" dd:MaxRange="43.640000000000001" lib:fusi="0" />
+<Parameter_name="PpDae_NegAcceleratorPedalGradientDriverActive" value="-400" type="tInt16" dd:MinRange="-6350" dd:MaxRange="0" lib:fusi="0" />
+<Parameter_name="PpDae_DriverDecelerationRequestDriverActive" value="600000 750000 1000000 1100000 800000" type="tUInt32[]" dd:MinRange="0" dd:MaxRange="27660000" lib:fusi="0" />
+<Parameter_name="PpDae_Enabled" value="1" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="PpDae_BrakePressureGradientDriverActive" value="20000000" type="tUInt32" dd:MinRange="0" dd:MaxRange="250000000" lib:fusi="0" />
+<Parameter_name="PpDae_VelocityAreaMax" value="2.78 8.34 13.89 22.22 33.33" type="tFloat32[]" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpDae_DriverActivity" value="1" type="tUInt8" dd:MinRange="0" dd:MaxRange="2" lib:fusi="0" />
+<Parameter_name="PpDae_t_DriverActivityCriteria" value="2400" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="PpDae_SlowPpDaengerousGradient" value="0.52 0.44 0.35 0.24 0.14" type="tFloat32[]" dd:MinRange="0" dd:MaxRange="27.920000000000002" lib:fusi="0" />
+<Parameter_name="PpDae_PosAcceleratorPedalGradientDriverActive" value="180" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Ada_t_ReactionTimes" value="300 300 300 300" type="tUInt16[]" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Ada_PartialBrakingValidSystemStates" value="7" type="tUInt8" dd:MinRange="0" dd:MaxRange="7" lib:fusi="0" />
+<Parameter_name="Ada_v_AsilDependendVelocityReduction" value="19.5 0" type="tFloat32[]" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="Ada_t_PartialBrakingBrakingHoldTime" value="80" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Ada_t_PartialBrakingMissingEscAction" value="65535" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Ada_a_AutomaticEmergencyBrakingMax" value="-14" type="tInt8" dd:MinRange="-20" dd:MaxRange="0" lib:fusi="0" />
+<Parameter_name="Ada_t_PartialBrakingAfterBrakejoltRequest" value="200" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Ada_a_MaxTrailerAttached" value="-14" type="tInt8" dd:MinRange="-20" dd:MaxRange="0" lib:fusi="1" />
+<Parameter_name="Ada_PartialBrakingDecelerationGradient" value="10 10" type="tFloat32[]" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="Ada_t_PartialBrakingAfterBrakejoltAction" value="300" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Ada_t_PartialBrakingMaxRequest" value="4000" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Ada_a_PartialBrakingMax" value="-3 -3" type="tInt8[]" dd:MinRange="-15" dd:MaxRange="0" lib:fusi="0" />
+<Parameter_name="Ada_a_MaxUnbelted" value="-3" type="tInt8" dd:MinRange="-15" dd:MaxRange="0" lib:fusi="1" />
+<Parameter_name="Ada_t_PartialBrakingLock" value="8000" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Ada_PartialBrakingUseMaxDeceleration" value="1" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="Ada_PartialBrakingCriticalityAcute" value="6 6 3 6" type="tUInt8[]" dd:MinRange="1" dd:MaxRange="6" lib:fusi="1" />
+<Parameter_name="PpRpa_ZeroYawRate_Vehicle" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="32767" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroAy_Vehicle" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="32767" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroYawRate_VRU" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroYawAngle_Cyclist" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroVy_Cyclist" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroAy_AnyObject" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroVy_AnyObject" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_VMaxManipulationActive" value="1" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroYawAngle_Vehicle" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="32767" lib:fusi="0" />
+<Parameter_name="PpRpa_ThreshVMax_Cyclist" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="32767" lib:fusi="0" />
+<Parameter_name="PpRpa_ThreshVMax_Pedestrian" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="32767" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroAy_VRU" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_TreshVMax_vx" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroYawAngle_VRU" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroYawRate_AnyObject" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroVy_Vehicle" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="32767" lib:fusi="0" />
+<Parameter_name="PpRpa_ThreshPpRpaintMIN" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="32767" lib:fusi="0" />
+<Parameter_name="PpRpa_ThreshVMax_VRU" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="32767" lib:fusi="0" />
+<Parameter_name="PpRpa_TreshVMax_vy" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroAy_Cyclist" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroYawRate_Cyclist" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpRpa_ZeroYawAngle_AnyObject" value="10" type="tFloat32" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpLv_CheckLaneInformationActive" value="0" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="PpLv_CheckSensorActive" value="0" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="PpLv_LaneObject_MinExistenceConfidence" value="0" type="tUInt8" dd:MinRange="0" dd:MaxRange="100" lib:fusi="0" />
+<Parameter_name="PpLv_LaneObject_MaxDistY" value="0" type="tFloat32" dd:MinRange="-8" dd:MaxRange="8" lib:fusi="0" />
+<Parameter_name="PpLv_CheckSignalQualityActive" value="0" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="Asq_BeltRetractionCommonCriteria48_63" value="34306" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="1" />
+<Parameter_name="Asq_BeltRetraction_Row1P" value="1" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="Asq_BeltRetractionCommonCriteria16_31" value="33792" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Asq_ContourClosingValidSystemStates" value="7" type="tUInt8" dd:MinRange="0" dd:MaxRange="7" lib:fusi="0" />
+<Parameter_name="Asq_BeltRetractionValidSystemStates" value="7" type="tUInt8" dd:MinRange="0" dd:MaxRange="7" lib:fusi="0" />
+<Parameter_name="Asq_BeltRetractionCommonCriteria32_47" value="1024" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Asq_ContourClosingCommonCriteria32_47" value="1024" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Asq_BeltRetraction_Row1D" value="1" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="Asq_BeltRetraction_Row2D" value="1" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="Asq_ContourClosingCommonCriteria0_15" value="40" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="1" />
+<Parameter_name="Asq_BeltRetractionCommonCriteria0_15" value="40" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Asq_BeltRetraction_Row2P" value="1" type="tBool" dd:MinRange="0" dd:MaxRange="1" lib:fusi="0" />
+<Parameter_name="Asq_ContourClosingCommonCriteria16_31" value="33792" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
+<Parameter_name="Asq_ContourClosingCommonCriteria48_63" value="34306" type="tUInt16" dd:MinRange="0" dd:MaxRange="65535" lib:fusi="0" />
